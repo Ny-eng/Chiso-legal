@@ -1,0 +1,30 @@
+name: お問い合わせ
+description: CHISOに関するご質問・不具合報告
+title: "[問い合わせ] "
+labels: ["inquiry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        CHISOへのお問い合わせありがとうございます。
+
+  - type: textarea
+    id: content
+    attributes:
+      label: 内容
+      description: ご質問や不具合の詳細をご記入ください
+      placeholder: 例：読書ログが保存されません
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: アプリバージョン
+      placeholder: 例：1.0.0
+
+  - type: input
+    id: device
+    attributes:
+      label: 端末 / iOS
+      placeholder: 例：iPhone15 / iOS18
